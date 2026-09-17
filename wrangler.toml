@@ -1,9 +1,9 @@
-name = "unlimited-transfer-api"
+name = "agnes-ai.com-api"
 main = "src/worker.js"
 compatibility_date = "2025-11-21"
 
 # Store the upstream key as a secret instead of committing it here:
-#   wrangler secret put UNLIMITED_SURF_API_KEY
+#   wrangler secret put AGNES_AI_COM_API_KEY
 #
 # Optional: protect this Worker with your own client-facing key:
 #   wrangler secret put WORKER_API_KEY
@@ -15,6 +15,6 @@ compatibility_date = "2025-11-21"
 # or x-api-key: <key>; the Worker forwards it upstream when no secret is set.
 
 [vars]
-UPSTREAM_BASE_URL = "https://unlimited.surf"
+UPSTREAM_BASE_URL = "https://platform.agnes-ai.com"
 DEFAULT_MODEL = "gateway-gpt-5-5"
 DEFAULT_CLAUDE_MODEL = "claude-opus-4-7-20260101"
